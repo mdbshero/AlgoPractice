@@ -31,3 +31,13 @@ var addTwoNumbers = function(l1, l2) {
     
     return result.next;
 };
+
+//69. Square Root
+
+var mySqrt = function(x) {
+    let result = 1;
+    while (result*result <= x){
+        result++
+    };
+    return result - 1;
+};
