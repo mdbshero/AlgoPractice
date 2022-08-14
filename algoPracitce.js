@@ -49,3 +49,8 @@ var getConcatenation = function(nums) {
     let ans = x.concat(nums);
     return ans;
 };
+
+//1920. Build array from permutation
+var buildArray = function(nums) {
+    return nums.map(a=>nums[a]);
+};
