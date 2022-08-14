@@ -41,3 +41,11 @@ var mySqrt = function(x) {
     };
     return result - 1;
 };
+
+
+//1929. Concat arrays
+var getConcatenation = function(nums) {
+    let x = nums;
+    let ans = x.concat(nums);
+    return ans;
+};
