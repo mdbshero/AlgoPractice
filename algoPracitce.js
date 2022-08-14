@@ -54,3 +54,11 @@ var getConcatenation = function(nums) {
 var buildArray = function(nums) {
     return nums.map(a=>nums[a]);
 };
+
+//1662. Check if two strings arrays are equivalent
+var arrayStringsAreEqual = function(word1, word2) {
+    let one = word1.join("");
+    let two = word2.join("");
+    let ans = one == two ? true : false;
+    return ans
+};
