@@ -62,3 +62,14 @@ var arrayStringsAreEqual = function(word1, word2) {
     let ans = one == two ? true : false;
     return ans
 };
+
+//283. Move Zeros
+var moveZeroes = function(nums) {
+    let arrLength = nums.length;
+    for (let i = arrLength; i--;5){
+        if (nums[i]===0) {
+            nums.splice(i,1);
+            nums.push(0);
+        }
+    }
+};
