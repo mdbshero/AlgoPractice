@@ -73,3 +73,14 @@ var moveZeroes = function(nums) {
         }
     }
 };
+
+//7. Reverse Integer (Contraints to 32 Bit integers)
+var reverse = function(x) {
+    let rev = parseFloat(x.toString().split("").reverse().join(""))
+    let sign = Math.sign(x)
+    if (rev > 0x7FFFFFFF) {
+        return 0;
+    } else {
+        return rev * sign;
+    }
+};
