@@ -78,7 +78,7 @@ var moveZeroes = function(nums) {
 var reverse = function(x) {
     let rev = parseFloat(x.toString().split("").reverse().join(""))
     let sign = Math.sign(x)
-    if (rev > 0x7FFFFFFF) {
+    if (rev > 0x7FFFFFFF) { // Contrains number to 32-Bit
         return 0;
     } else {
         return rev * sign;
